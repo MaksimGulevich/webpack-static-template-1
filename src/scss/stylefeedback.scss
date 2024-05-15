@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT lakes', sans-serif;
+  font-size: 16px;
+  color: #1b1c21;
+}
+
+/* Навигация в шапке меню. menu__header*/
+
+.feedback {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: -600px;
+  box-sizing: border-box;
+  padding: 24px 16px 0 16px;
+  width: 320px;
+  min-height: 100vh;
+  background-color: white;
+  @media screen and (min-width: 1440px) {
+    box-shadow: 20px 0 50px 0 black;
+    min-width: 440px;
+    padding: 24px 32px 0 32px;
+  }
+}
+
+.feedback__title {
+  font-size: 24px;
+}
+
+.feedback__title::before {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  background-color: #41f6d7;
+  border-radius: 5px;
+}
+
+/*Поля ввода отправки формы*/
+
+.feedback__ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feedback__input,
+.feedback__textarea {
+  box-sizing: border-box;
+  width: 288px;
+  height: 48px;
+  padding: 16px;
+  @media screen and (min-width: 768px) {
+    width: 376px;
+  }
+  margin-bottom: 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus,
+.feedback__textarea:focus {
+  border: 2px solid rgb(205, 212, 214);
+}
+
+.feedback__textarea {
+  height: 118px;
+  resize: none;
+}
+
+.feedback__input[type='text'],
+.feedback__textarea {
+  font-family: 'TT lakes', sans-serif;
+  color: #b5b6bc;
+}
+input::-webkit-input-placeholder {
+  color: #b5b6bc;
+}
+
+.feedback__textarea::placeholder {
+  color: #b5b6bc;
+}
+
+.feedback__button-close {
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    top: 35px;
+    left: -72px;
+  }
+  margin: 0;
+  padding: 0;
+  margin-right: 16px;
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+}
+
+/* Согласие на отправку формы*/
+
+.feedback__p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #7e7e82;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/*Кнопка отправить*/
+
+.feedback__button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 16px 0 auto;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+  width: 119px;
+  height: 32px;
+  background-color: #ff3e79;
+  border: none;
+  border-radius: 16px;
+  font-family: 'TT lakes', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.feedback__button:before {
+  position: relative;
+  content: 'Отправить';
+  left: -5px;
+  text-transform: uppercase;
+}
+
+.feedback__button:after {
+  display: inline-block;
+  position: relative;
+  right: -5px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(45deg);
+  content: '';
+  width: 5px;
+  height: 5px;
+}
+
+/* Открытие обратной связи*/
+
+.feedback__open {
+  transition: 1s ease;
+  transform: translateX(-600px);
+}
+
+/* Закрытие обратной связи*/
+
+.feedback__close {
+  transition: 1s ease;
+  transform: translateX(600px);
+}

@@ -1,0 +1,29 @@
+.blur__z-index {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgb(255, 255, 255);
+  transition: 1s linear;
+  opacity: 0.8;
+}
+
+.blur__z-index_before-1440px {
+  @media (max-width: 1439.98px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    background-color: rgb(255, 255, 255);
+    transition: 1s linear;
+    opacity: 0.8;
+  }
+}

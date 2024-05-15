@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'TT lakes', sans-serif;
+  font-size: 16px;
+  color: #1b1c21;
+}
+
+.page {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 320px 1120px;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,241 @@
+.repair {
+  @media (max-width: 767.98px) {
+    min-width: 320px;
+  }
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+  @media (min-width: 1440px) {
+    width: 1120px;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  background-color: #f8f8f8;
+}
+
+.repair__title {
+  padding: 16px;
+  @media screen and (min-width: 768px) {
+    padding: 16px 32px;
+  }
+  background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+
+.repair__h2 {
+  margin: 0;
+  color: #7e7e82;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.repair__item {
+  margin: 0;
+  padding: 1px;
+  background-color: #b8cdcc;
+}
+
+.repair__item {
+  @media (max-width: 767.98px) {
+    width: 240px;
+  }
+  @media (min-width: 768px) {
+    width: 224px;
+  }
+  @media (min-width: 1440px) {
+    width: 240px;
+    margin-right: 16px;
+  }
+  position: relative;
+  box-sizing: border-box;
+  height: 160px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+
+.repair__text {
+  font-weight: 500;
+}
+
+.repair__item::after {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+}
+
+.repair__item::before {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 36px;
+  margin-bottom: 33px;
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid #ff3e79;
+  border-right: 2px solid #ff3e79;
+  transform: rotate(45deg);
+}
+
+.repair__text {
+  position: absolute;
+  left: 15px;
+}
+
+.repair__swiper {
+  @media (max-width: 767.98px) {
+    box-sizing: border-box;
+    overflow: hidden;
+    min-width: 320px;
+    height: 210px;
+    background-color: #f8f8f8;
+    padding: 16px 0 10px 16px;
+  }
+  @media (min-width: 768px) {
+    padding-bottom: 20px;
+  }
+  @media (min-width: 1440px) {
+    padding-bottom: 20px;
+  }
+}
+
+.repair__swiper-wrapper {
+  @media (min-width: 768px) {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 224px);
+    grid-template-rows: repeat(auto-fit, 160px);
+    overflow: hidden;
+    min-width: 768px;
+    height: 200px;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: #f8f8f8;
+    padding: 24px;
+  }
+  @media (min-width: 1440px) {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    overflow: hidden;
+    width: 1120px;
+    height: 200px;
+    gap: 16px 32px;
+    background-color: #f8f8f8;
+    padding: 32px;
+  }
+}
+
+.repair__swiper-wrapper_height--auto {
+  @media (min-width: 768px) {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 224px);
+    grid-template-rows: repeat(auto-fit, 160px);
+    overflow: hidden;
+    min-width: 768px;
+    height: auto;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: #f8f8f8;
+    padding: 24px;
+  }
+  @media (min-width: 1440px) {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    overflow: hidden;
+    width: 1120px;
+    height: auto;
+    gap: 16px 32px;
+    background-color: #f8f8f8;
+    padding: 32px;
+  }
+}
+.repair__swiper-slide {
+  @media (max-width: 767.98px) {
+    width: auto;
+  }
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 1440px) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.repair__swiper-pagination {
+  @media (max-width: 767.98px) {
+    position: relative;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  @media (max-width: 767.98px) {
+    width: 12px;
+    height: 12px;
+    background-color: #dddddd;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  @media (max-width: 767.98px) {
+    background-color: #b5b6bc;
+  }
+}
+
+.repair__button {
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    margin-left: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #f8f8f8;
+    font-family: 'TT lakes', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1b1c21;
+  }
+  @media (min-width: 1440px) {
+    margin-left: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #f8f8f8;
+    font-family: 'TT lakes', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1b1c21;
+  }
+}
